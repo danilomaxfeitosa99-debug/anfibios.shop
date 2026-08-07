@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salute Maschile - Rimedio Naturale per la Prostata</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=Source+Sans+3:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Source Sans 3', sans-serif; background-color: #F8F4EC; color: #2D2D2D; line-height: 1.6; }
+        
+        .header { border-bottom: 1px solid #E8E0D4; }
+        .header-inner { max-width: 720px; margin: 0 auto; padding: 16px; display: flex; align-items: center; justify-content: space-between; }
+        .header-label { font-size: 11px; text-transform: uppercase; letter-spacing: 2px; color: #5B7A3D; }
+        .header-title { font-size: 14px; font-weight: 600; color: #2D2D2D; font-family: 'Lora', serif; }
+        .header-date { font-size: 12px; color: #888; }
+        
+        .category-bar { background-color: #5B7A3D; padding: 10px 0; }
+        .category-inner { max-width: 720px; margin: 0 auto; padding: 0 16px; display: flex; gap: 24px; }
+        .category-inner span { font-size: 14px; color: rgba(255,255,255,0.7); white-space: nowrap; }
+        .category-inner span:first-child { color: #fff; font-weight: 500; }
+        
+        .main { max-width: 720px; margin: 0 auto; padding: 32px 16px; }
+        
+        .badge { display: inline-block; font-size: 11px; text-transform: uppercase; letter-spacing: 1px; font-weight: 600; padding: 4px 10px; border-radius: 4px; background-color: #EDF5E5; color: #5B7A3D; margin-bottom: 8px; }
+        
+        h1 { font-family: 'Lora', serif; font-size: 32px; font-weight: 700; line-height: 1.2; color: #2D2D2D; margin: 16px 0; }
+        .subtitle { font-family: 'Lora', serif; font-size: 20px; font-style: italic; color: #555; margin-bottom: 24px; }
+        
+        .author { display: flex; align-items: center; gap: 12px; margin-bottom: 24px; padding-bottom: 24px; border-bottom: 1px solid #E8E0D4; }
+        .author-avatar { width: 40px; height: 40px; border-radius: 50%; background-color: #5B7A3D; display: flex; align-items: center; justify-content: center; color: #fff; font-size: 13px; font-weight: 700; }
+        .author-name { font-size: 14px; font-weight: 600; color: #2D2D2D; }
+        .author-date { font-size: 12px; color: #888; }
+        
+        .clickable-img { display: block; margin: 32px 0; text-decoration: none; }
+        .clickable-img img { width: 100%; border-radius: 8px; border: 3px dashed #7DB87D; padding: 4px; transition: all 0.3s; }
+        .clickable-img img:hover { box-shadow: 0 8px 25px rgba(91,122,61,0.2); }
+        
+        .body-text { font-size: 17px; line-height: 1.7; color: #444; margin-bottom: 24px; }
+        .body-text strong { color: #2D2D2D; }
+        
+        h2 { font-family: 'Lora', serif; font-size: 24px; font-weight: 700; color: #2D2D2D; margin: 40px 0 16px; }
+        
+        .highlight-box { margin: 32px 0; padding: 24px; border-radius: 8px; background-color: #EDF5E5; border-left: 4px solid #5B7A3D; }
+        .highlight-box p { font-size: 16px; font-weight: 500; color: #3D5A2A; margin: 0; }
+        
+        .warning-box { margin: 32px 0; padding: 24px; border-radius: 8px; background-color: #FFF8E8; border-left: 4px solid #C4724A; }
+        .warning-box p { font-size: 16px; color: #8B4513; margin: 0; }
+        
+        .benefits-list { margin: 24px 0; padding: 0; list-style: none; }
+        .benefits-list li { display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px; font-size: 16px; color: #444; }
+        .benefits-list li::before { content: ''; display: inline-block; width: 8px; height: 8px; border-radius: 50%; background-color: #5B7A3D; margin-top: 8px; flex-shrink: 0; }
+        
+        .cta-container { text-align: center; margin: 32px 0; }
+        .cta-button { display: inline-block; padding: 16px 32px; background-color: #5B7A3D; color: #fff; font-size: 18px; font-weight: 600; border-radius: 8px; text-decoration: none; box-shadow: 0 4px 15px rgba(91,122,61,0.3); transition: all 0.3s; animation: pulse-gentle 2s ease-in-out infinite; }
+        .cta-button:hover { box-shadow: 0 6px 25px rgba(91,122,61,0.5); transform: scale(1.02); }
+        .cta-note { font-size: 12px; color: #888; margin-top: 12px; }
+        
+        .final-cta { text-align: center; margin: 40px 0; padding: 32px; border-radius: 12px; background-color: #EDF5E5; }
+        .final-cta h3 { font-family: 'Lora', serif; font-size: 20px; font-weight: 700; color: #2D2D2D; margin-bottom: 12px; }
+        .final-cta p { font-size: 16px; color: #555; margin-bottom: 24px; }
+        .final-cta .cta-button { font-size: 20px; padding: 20px 40px; }
+        
+        .spots { text-align: center; margin-top: 24px; font-size: 14px; font-weight: 500; color: #C4724A; }
+        
+        footer { background-color: #2D2D2D; color: #ccc; padding: 40px 0; margin-top: 40px; }
+        .footer-inner { max-width: 720px; margin: 0 auto; padding: 0 16px; }
+        .footer-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; margin-bottom: 32px; }
+        .footer-grid h4 { font-size: 14px; font-weight: 600; color: #fff; margin-bottom: 12px; }
+        .footer-grid p, .footer-grid li { font-size: 12px; line-height: 1.8; }
+        .footer-grid ul { list-style: none; padding: 0; }
+        .footer-grid a { color: #ccc; text-decoration: none; }
+        .footer-grid a:hover { color: #fff; }
+        .disclaimer { padding-top: 24px; border-top: 1px solid #444; }
+        .disclaimer p { font-size: 11px; color: #999; line-height: 1.7; }
+        .disclaimer .copy { font-size: 11px; color: #666; margin-top: 16px; }
+        
+        @keyframes pulse-gentle {
+            0%, 100% { transform: scale(1); box-shadow: 0 4px 15px rgba(91,122,61,0.3); }
+            50% { transform: scale(1.02); box-shadow: 0 6px 25px rgba(91,122,61,0.5); }
+        }
+        
+        @media (max-width: 640px) {
+            h1 { font-size: 26px; }
+            .subtitle { font-size: 17px; }
+            .footer-grid { grid-template-columns: 1fr; }
+            .category-inner { overflow-x: auto; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-inner">
+            <div>
+                <div class="header-label">Salute & Benessere</div>
+                <div class="header-title">Il Quotidiano della Salute Maschile</div>
+            </div>
+            <div class="header-date"><script>document.write(new Date().toLocaleDateString('it-IT', {day:'numeric',month:'long',year:'numeric'}));</script></div>
+        </div>
+    </header>
+
+    <!-- Category Bar -->
+    <div class="category-bar">
+        <div class="category-inner">
+            <span>Prostata</span>
+            <span>Benessere</span>
+            <span>Nutrizione</span>
+            <span>Rimedi Naturali</span>
+            <span>Ricerca</span>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="main">
+        <article>
+            <div class="badge">Scoperta Scientifica</div>
+            
+            <h1>Questo frutto tropicale sta cambiando la vita di migliaia di uomini italiani con problemi alla prostata</h1>
+            
+            <p class="subtitle">Un composto naturale presente nella bava del gombo potrebbe essere la chiave per sgonfiare la prostata ingrossata e ripristinare il flusso urinario in modo naturale</p>
+            
+            <div class="author">
+                <div class="author-avatar">RN</div>
+                <div>
+                    <div class="author-name">Redazione Natura & Salute</div>
+                    <div class="author-date">Aggiornato: <script>document.write(new Date().toLocaleDateString('it-IT', {day:'numeric',month:'long',year:'numeric'}));</script> — Tempo di lettura: 4 min</div>
+                </div>
+            </div>
+
+            <!-- Hero Image -->
+            <a href="https://lp.anfibios.shop/preclick" class="clickable-img"><img src="images/hero.jpg" alt="Uomo italiano attivo nella campagna"></a>
+
+            <p class="body-text"><strong>Se ti alzi più di 3 volte a notte per andare in bagno</strong>, se il tuo getto urinario è debole e intermittente, o se senti che la tua vescica non si svuota mai completamente... quello che stai per leggere potrebbe cambiare radicalmente la tua qualità di vita.</p>
+
+            <p class="body-text">Più di <strong>4.000 uomini in Italia</strong> stanno già utilizzando un rimedio naturale a base di bava di gombo — un composto vegetale altamente concentrato — per sgonfiare la prostata ingrossata e ripristinare un flusso urinario forte e costante.</p>
+
+            <!-- Highlight Box -->
+            <div class="highlight-box">
+                <p>"La bava di gombo contiene un composto mucillaginoso che agisce direttamente sull'infiammazione prostatica, riducendo il gonfiore e liberando l'uretra in modo naturale — senza effetti collaterali."</p>
+            </div>
+
+            <!-- CTA 1 -->
+            <div class="cta-container">
+                <a href="https://lp.anfibios.shop/preclick" class="cta-button">Scopri il Metodo Naturale &rarr; Guarda la Presentazione</a>
+                <p class="cta-note">Presentazione educativa gratuita — Posti limitati</p>
+            </div>
+
+            <h2>Come un organismo nascosto sta gonfiando la tua prostata</h2>
+
+            <p class="body-text">Recenti studi hanno rivelato che il vero responsabile dell'ingrossamento prostatico non è semplicemente l'età. All'interno della ghiandola prostatica, <strong>microrganismi parassitari</strong> si insediano silenziosamente, provocando un'infiammazione cronica che fa gonfiare la prostata fino a tre volte le sue dimensioni normali.</p>
+
+            <p class="body-text">Questi organismi si nutrono del tessuto prostatico, rilasciando tossine che irritano l'uretra e comprimono il canale urinario. Il risultato? Un getto sempre più debole, risvegli notturni continui e quella sensazione frustrante di non riuscire mai a svuotare completamente la vescica.</p>
+
+            <!-- Okra Image -->
+            <a href="https://lp.anfibios.shop/preclick" class="clickable-img"><img src="images/okra.jpg" alt="Gombo fresco - ingrediente naturale per la prostata"></a>
+
+            <h2>Perché la bava di gombo è così efficace?</h2>
+
+            <p class="body-text">Il gombo (Abelmoschus esculentus) produce una sostanza mucillaginosa unica che, quando altamente concentrata, ha dimostrato proprietà straordinarie:</p>
+
+            <ul class="benefits-list">
+                <li><strong>Azione anti-parassitaria:</strong> Elimina i microrganismi che causano l'infiammazione cronica della prostata</li>
+                <li><strong>Sgonfiamento naturale:</strong> Riduce il volume della prostata riportandola alle dimensioni di una noce</li>
+                <li><strong>Rilassamento dell'uretra:</strong> Libera il canale urinario permettendo un getto forte e costante</li>
+                <li><strong>Zero effetti collaterali:</strong> A differenza dei trattamenti invasivi, non compromette la vitalità maschile</li>
+            </ul>
+
+            <!-- CTA 2 -->
+            <div class="cta-container">
+                <a href="https://lp.anfibios.shop/preclick" class="cta-button">Guarda Come Funziona &rarr; Presentazione Gratuita</a>
+            </div>
+
+            <h2>"Dormo tutta la notte per la prima volta in 5 anni"</h2>
+
+            <p class="body-text">Migliaia di uomini italiani stanno già sperimentando i benefici di questo rimedio naturale. Uomini che per anni si sono alzati 4, 5, anche 6 volte a notte — ora dormono ininterrottamente fino al mattino.</p>
+
+            <p class="body-text">Il segreto sta nella <strong>concentrazione specifica</strong> della bava di gombo. Non basta mangiare il gombo normalmente — serve un processo di estrazione che concentra il principio attivo fino a renderlo efficace contro i parassiti prostatici.</p>
+
+            <!-- Active elderly image -->
+            <a href="https://lp.anfibios.shop/preclick" class="clickable-img"><img src="images/active.jpg" alt="Uomo anziano attivo e in salute"></a>
+
+            <h2>Come utilizzare questo rimedio</h2>
+
+            <p class="body-text">Il metodo è sorprendentemente semplice. Si assume <strong>una sola volta al giorno</strong>, preferibilmente al mattino. Non richiede ricette complicate né ingredienti difficili da trovare.</p>
+
+            <!-- Warning Box -->
+            <div class="warning-box">
+                <p><strong>Attenzione:</strong> È importante non superare una dose al giorno. Il composto è così potente che un eccesso potrebbe rilassare troppo l'uretra, causando un getto eccessivamente forte. Una dose è il limite massimo consigliato.</p>
+            </div>
+
+            <p class="body-text">In una presentazione educativa gratuita, viene spiegato passo dopo passo come preparare e utilizzare questo rimedio naturale a casa propria, con soli due ingredienti facilmente reperibili.</p>
+
+            <!-- Natural remedy image -->
+            <a href="https://lp.anfibios.shop/preclick" class="clickable-img"><img src="images/remedy.jpg" alt="Ingredienti naturali per la salute della prostata"></a>
+
+            <h2>Perché questo metodo è diverso</h2>
+
+            <p class="body-text">A differenza degli approcci tradizionali che si limitano a mascherare i sintomi rilassando i muscoli a forza, questo rimedio naturale <strong>va alla radice del problema</strong>: elimina gli organismi parassitari che causano l'infiammazione e permette alla prostata di tornare alle sue dimensioni normali.</p>
+
+            <p class="body-text">Non è un palliativo temporaneo. È un approccio che affronta la causa — non il sintomo. E lo fa senza compromettere la vitalità maschile, senza effetti collaterali e senza procedure invasive.</p>
+
+            <!-- Couple image -->
+            <a href="https://lp.anfibios.shop/preclick" class="clickable-img"><img src="images/couple.jpg" alt="Coppia italiana attiva e felice"></a>
+
+            <!-- Final CTA -->
+            <div class="final-cta" id="cta">
+                <h3>Scopri come migliaia di uomini italiani stanno risolvendo i problemi alla prostata in modo naturale</h3>
+                <p>Guarda la presentazione educativa gratuita e scopri il metodo della bava di gombo concentrata</p>
+                <a href="https://lp.anfibios.shop/preclick" class="cta-button">Guarda la Presentazione Gratuita &rarr;</a>
+                <p class="cta-note">Contenuto educativo — Nessun obbligo — Accesso immediato</p>
+            </div>
+
+            <!-- Spots Counter -->
+            <div class="spots">
+                Posti disponibili per la presentazione gratuita: <strong id="spots">147</strong>
+            </div>
+        </article>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-inner">
+            <div class="footer-grid">
+                <div>
+                    <h4>Informazioni Aziendali</h4>
+                    <p>
+                        <strong>PARTE CONTRAENTE:</strong> DIGITAL SOLUTIONS LTDA<br>
+                        <strong>CNPJ:</strong> 56.604.128/0001-19<br>
+                        <strong>Indirizzo:</strong> Av. Paulista, 1578, Sala 302, CEP 01.310-200, São Paulo/SP<br>
+                        <strong>Email:</strong> contato@digitalsolutions.com.br
+                    </p>
+                </div>
+                <div>
+                    <h4>Informazioni</h4>
+                    <ul>
+                        <li><a href="terms.html">Termini di Utilizzo</a></li>
+                        <li><a href="privacy.html">Politica sulla Privacy</a></li>
+                        <li><a href="#">Contattaci</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="disclaimer">
+                <p><strong>AVVISO LEGALE:</strong> Questo sito web e il suo contenuto sono solo a scopo informativo e educativo. Le informazioni qui presentate non intendono sostituire il parere di un professionista sanitario qualificato. I risultati possono variare da persona a persona. Questo prodotto non è destinato a diagnosticare, trattare, curare o prevenire alcuna malattia. Consultare sempre un professionista sanitario prima di iniziare qualsiasi programma di integrazione.</p>
+                <p class="copy">© 2024 Tutti i diritti riservati. È severamente vietato copiare o riprodurre qualsiasi immagine o testo da questo sito.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        let spots = 147;
+        const element = document.getElementById("spots");
+        function decreaseSpots() {
+            if (spots > 23) {
+                let decrement = Math.max(1, Math.ceil(spots * 0.01));
+                spots -= decrement;
+                if (spots < 23) spots = 23;
+                element.textContent = spots;
+                setTimeout(decreaseSpots, 4500);
+            }
+        }
+        decreaseSpots();
+    </script>
+    <script type="text/javascript" src="https://lp.anfibios.shop/pretrack.js?rtkcmpid=6a7653a0da3013a63b540847"></script>
+</body>
+</html>
